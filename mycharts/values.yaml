@@ -1,6 +1,10 @@
 Common:
- Vault_token: "s.h4tC6ZMhBtD2rsUz8UMWmVMY"
- Vault_URL: http://10.97.60.220:30552/v1/
- DBType: db2
- DBHost: 10.0.15.140
- Tenant: demo
+ Image_repo: imageacr.azurecr.io/
+first-app:
+  Name: himani2203/
+  Image: himani2203/java-hello-world-with-maven
+  Tag: #{Release.Artifacts._first app.BuildId}#
+second-app:
+  Name: himani2203/
+  Image: himani2203/java-hello-world-with-maven
+  Tag: #{Release.Artifacts._second app.BuildId}#
