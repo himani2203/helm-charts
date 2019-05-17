@@ -1,0 +1,6 @@
+Common:
+ Vault_token: "s.h4tC6ZMhBtD2rsUz8UMWmVMY"
+ Vault_URL: http://10.97.60.220:30552/v1/
+ DBType: db2
+ DBHost: 10.0.15.140
+ Tenant: demo
