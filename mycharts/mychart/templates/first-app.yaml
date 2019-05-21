@@ -17,8 +17,8 @@ spec:
         image: "{{ .Values.Common.Image_repo }}{{ .Values.first-app.Image }}:{{ .Values.first-app.Tag }}"
         ports: 
         - containerPort: 8080
-#      imagePullSecrets:
-#      - name: autodeploy      
+     imagePullSecrets:
+      - name: autodeploy      
 --- 
 # https://kubernetes.io/docs/concepts/services-networking/service/#defining-a-service  
 kind: Service 
