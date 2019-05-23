@@ -14,7 +14,7 @@ spec:
     spec: 
       containers: 
       - name: java 
-        image: "{{ .Values.Common.Image_repo }}{{ .Values.second-app.Image }}:{{ .Values.second-app.Tag }}"
+        image: {{ .Values.Common.Image_repo }}{{ .Values.second-app.Image }}:{{ .Values.second-app.Tag }}
         ports: 
         - containerPort: 8081
       imagePullSecrets:
