@@ -24,7 +24,7 @@ spec:
 kind: Service 
 apiVersion: v1 
 metadata: 
-  name: java-service 
+  name: hello-service 
 spec: 
   selector: 
     app: java 
