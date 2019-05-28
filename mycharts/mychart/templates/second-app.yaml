@@ -14,13 +14,9 @@ spec:
     spec: 
       containers: 
       - name: java 
-        image: {{ .Values.Common.Image_repo }}{{ .Values.second-app.Image }}:{{ .Values.second-app.Tag }}
+        image: '{{ .Values.Common.Image_repo }}{{ .Values.second-app.Image }}:{{ .Values.second-app.Tag }}'
         ports: 
         - containerPort: 8081
-      - task: CopyFiles@2
-        inputs:
-         targetFolder: '$(Build.ArtifactStagingDirectory)'    
-      - task: PublishBuildArtifacts@1
       imagePullSecrets:
       - name: autodeploy      
 --- 
