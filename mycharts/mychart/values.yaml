@@ -1,8 +1,8 @@
 Common:
  Image_repo: imageacr.azurecr.io/
-first-app:
+firstapp:
   Image: himani2203/maven_project
   Tag: #{Release.Artifacts._first app.BuildId}#
-second-app:
+secondapp:
   Image: himani2203/java-hello-world-with-maven
   Tag: #{Release.Artifacts._second app.BuildId}#
