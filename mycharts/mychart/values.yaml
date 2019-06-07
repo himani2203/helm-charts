@@ -2,8 +2,8 @@ Common:
  Image_repo: imageacr.azurecr.io/
  Vault_token: "s.0Pv176XQ8RCiPtVWxy1aj5Sd"
 firstapp:
-  Image: himani2203/maven_project
-  Tag: #{Release.Artifacts._first app.BuildId}#
+  Image: himani2203/springbootmavenjunitsample
+  Tag: #{Release.Artifacts._java-app.BuildId}#
 secondapp:
-  Image: himani2203/java-hello-world-with-maven
-  Tag: #{Release.Artifacts._second app.BuildId}#
+  Image: himani2203/spring-boot-maven-example-helloworld
+  Tag: #{Release.Artifacts._hello-world-app.BuildId}#
