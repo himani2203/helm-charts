@@ -1,19 +1,19 @@
 apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2 
 kind: Deployment 
 metadata: 
-  name: java-deployment 
+  name: java-deploy
 spec: 
   selector: 
     matchLabels: 
       app: java 
   replicas: 2 # tells deployment to run 2 pods matching the template 
   template:
-    metadata: 
-      labels: 
-        app: java 
+    metadata:
+      labels:
+        app: java
     spec: 
      containers: 
-      - name: java 
+      - name: java
         image: {{ .Values.Common.Image_repo }}{{ .Values.firstapp.Image }}:{{ .Values.firstapp.Tag }}
         ports: 
         - containerPort: 8080
@@ -24,7 +24,7 @@ spec:
 kind: Service 
 apiVersion: v1 
 metadata: 
-  name: java-service 
+  name: java-ser
 spec: 
   selector: 
     app: java 
